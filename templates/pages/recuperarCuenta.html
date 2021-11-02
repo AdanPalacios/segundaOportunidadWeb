@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% load static %}
+    {% block head %}
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'login.css' %}" />
+    {% endblock head %}
+
+    {% block navbar %}
+
+    {% endblock navbar %}
+
+
+    {% block content %} 
+    <section class="h-100">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                    <div class="card card-registration my-4">
+                        <div class="row g-0">
+                            <div class="col-xl-6 d-none d-xl-block">
+                                <img src="{% static 'img/ropa.jpg' %}" alt="Sample photo" class="img-fluid" style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;"/>
+                              </div>
+                            <div class="col-xl-6">
+                                <div class="card-body p-md-5 text-uppercase">
+                                    <h3 class="mb-5 text-uppercase">Buscar cuenta</h3>
+
+                                    <div class="input-group rounded">
+                                        <input type="search" class="form-control rounded" placeholder="ingrese su nombre de usuario o correo" aria-label="Search"
+                                        aria-describedby="search-addon" />
+                                        <span class="input-group-text border-0" id="search-addon">
+                                          <i class="fas fa-search"></i>
+                                        </span>
+                                      </div>
+                                      <br><br><br><br><br><br>
+                                      <h4 class="mb-5 text-uppercase">Como desea recuperar su cuenta</h4>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                          Cuenta de Facebook
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                          Mensaje de texto
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                          Llamada telefonica
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Correo electronico   
+                                        </label>
+                                      </div>
+
+                                      <br><br><br>
+                                      
+                                      <button type="submit" id="submit" class="btn btn-warning btn-lg ms-2">Recuperar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock content %}
+
+
+    {% block right_sidebar %}
+
+    {% endblock right_sidebar %}
+
+
+    {% block footer %} 
+
+    {% endblock footer %}
+
+
+    {% block javascript %} 
+
+    {% endblock javascript %}
